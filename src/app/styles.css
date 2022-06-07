@@ -102,20 +102,30 @@ button#signUp {
 }
 
 .metricas {
+  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 0px 80px 0px 80px;
-  width: auto;
-  height: 288px;
+  justify-content: space-between;
+  padding: 0px 112px 0px 112px;
+}
 
-  gap: 32px;
+.metricas div{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+
+  width: 100%;
+  height: auto;
+
 }
 .metricas h1 {
   font-size: 60px;
   font-weight: 600;
   color: var(--main-color);
+  margin: 0;
 }
 
 .metricas p {
