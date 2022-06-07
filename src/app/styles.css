@@ -1,0 +1,315 @@
+:root {
+  --text-color: #667085;
+  --main-color: #8e2424;
+  --outer-text-color: #101828;
+  --gray-weak: #eaecf0;
+  --footer-span :#98A2B3;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  width: 1440px;
+  height: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: #667085;
+}
+
+.navbar {
+  align-items: flex-start;
+  padding: 0px;
+
+  width: auto;
+  height: 80px;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0px 32px;
+  width: auto;
+  height: 44px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+
+  width: 362px;
+  height: 32px;
+
+  text-decoration: none;
+}
+button {
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  background: none;
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+button#signUp {
+  background-color: #8e2424;
+  color: #fff;
+}
+
+.sobre-nos {
+  padding: 7rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* poderia ser margin-bottom pra cada elemento, gap dá um espaçamento entre todos
+    os filhos de uma div com display flex*/
+}
+
+.sobre-nos span {
+  color: var(--main-color);
+}
+
+.sobre-nos h1 {
+  font-size: 2rem;
+}
+
+.sobre-nos p {
+  width: 792px;
+  color: var(--text-color);
+  max-width: 50%;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.metricas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px 80px 0px 80px;
+  width: auto;
+  height: 288px;
+
+  gap: 32px;
+}
+.metricas h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.metricas p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--outer-text-color);
+}
+
+.metricas span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text-color);
+
+  width: 280px;
+  height: 72px;
+}
+
+.vagas {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 64px;
+  margin: 96px auto 0px auto;
+}
+
+.vagas span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--main-color);
+  background-color: rgba(142, 36, 36, 0.05);
+
+  padding: 4px 12px;
+  border-radius: 1rem;
+}
+
+.vagas h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.vagas p {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.vagas img {
+  position: relative;
+  width: 1216px;
+  height: 400px;
+  margin-top: 64px;
+}
+
+.vagas-abertas {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: auto;
+}
+
+.container-vaga {
+  display: flex;
+  flex-direction: column;
+  width: 768px;
+  height: auto;
+  padding: 64px 32px 32px 32px;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.vaga {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 24px 24px 28px; 
+  gap: 32px;
+  width: 768px;
+  height: 136px;
+
+  border: 1px var(--gray-weak) solid;  
+  border-radius: 16px;
+}
+
+.informacoes {
+  display: flex;
+  gap: 24px;
+  color: var(--text-color);
+}
+
+.vaga h2 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.depoimentos{
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  align-items: center;
+  
+}
+
+.container-depoimentos{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0px 80px 96px 80px;
+  width: 1216px;
+  height: 404px;
+  border-radius: 16px;
+
+  background-color: #C3191908;
+  ;
+}
+.container-depoimentos span{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.container-depoimentos h1{
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 44px;
+  text-align: center;
+}
+
+footer{
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+
+  width: 100%;
+  height: 430px;
+
+  background-color:#F9FAFB;
+}
+
+footer h1{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;  
+  color: var(--outer-text-color);
+
+}
+
+footer p{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--text-color);
+}
+
+.button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  
+}
+.button input{
+
+  padding: 12px 14px 12px 16px;
+  gap: 8px;
+
+  width: 360px;
+  height: 48px;
+  
+  border-radius: 8px;
+  }
+
+  .button button{
+    background-color: var(--main-color);
+    color: var(--gray-weak);
+  }
+
+  footer span{
+    color: var(--footer-span) ;
+
+  }
